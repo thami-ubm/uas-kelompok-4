@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/ubm.png">
+  <title>UBM Student Portal</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <img src="img/menu-button.svg" class="menu-btn" style="width: 30px;">
+    <h1>S1 Student Portal</h1>
+  </nav>
+
+  <div class="content">
+    <div class="sidebar">
+      <div></div>
+      <img src="img/medali.png">
+      <p style="color: rgb(255, 255, 255); align-self: center; margin: 0; font-weight: 500; font-size: 1.5rem;">Poin : 42</p>
+      <div class="menu">
+        <a style="background-color: rgb(144, 177, 211)" href="">Home</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="abram_score.html">Score</a>
+        <a href="registration.html">Registration</a>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="title">
+        <h1>Dashboard</h1>
+        <a href="profile.html"><img style="height: 60px" src="img/Fall-Guys-1.png" /></a>
+      </div>
+
+      <div class="scroll-container">
+        <div class="parent">
+          <div class="div1">
+            <p style="font-size: 20px; margin: 0;">Today's Class</p>
+          </div>
+
+          <div class="div2">
+            <p style="font-size: 20px; margin: 0;">Assignment List</p>
+          </div>
+
+          <div class="div3">
+            <div class="card">
+              <div class="class-card">
+                <div class="class-date">
+                  <span class="weekday">Wednesday</span>
+                  <span class="day">4</span>
+                  <span class="month-year">December 2025</span>
+                </div>
+
+                <div class="class-info">
+                  <div class="class-top">
+                    <h3 class="course-name">Interaction Design</h3>
+                    <span class="class-time">07.30 – 11.10 WIB</span>
+                  </div>
+
+                  <p class="class-location">Olympia Laboratory</p>
+                </div>
+              </div>
+              <div class="class-card">
+                <div class="class-date">
+                  <span class="weekday">Wednesday</span>
+                  <span class="day">4</span>
+                  <span class="month-year">December 2025</span>
+                </div>
+
+                <div class="class-info">
+                  <div class="class-top">
+                    <h3 class="course-name">Website Design &amp; Development</h3>
+                    <span class="class-time">11.30 – 15.10 WIB</span>
+                  </div>
+
+                  <p class="class-location">Delphi Laboratory</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="div4">
+            <div style="display: flex;" class="card">
+              <h3>You have no assignment</h2>
+            </div>
+          </div>
+
+          <div class="div5">
+            <p style="font-size: 20px; margin: 0;">News & Event</p>
+          </div>
+
+          <div class="div6">
+            <p style="font-size: 20px; margin: 0;">B+ Connect</p>
+          </div>
+
+          <div class="div7">
+            <div class="eventcard">
+              <img src="img/news1.png" alt="News 1">
+              <img src="img/news2-crop.png" alt="News 2">
+              <img src="img/news3-crop.png" alt="News 3">
+              <img src="img/news4-crop.png" alt="News 4">
+            </div>
+          </div>
+          <div class="div8">
+            <div class="bconnect-card">
+              <div class="bconnect">
+                <img style="width: 100px;" src="img/cone.svg">
+                <h2>Under Construction</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const sidebar = document.querySelector('.sidebar');
+
+    menuBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('sidebar-open');
+    });
+  </script>
+
+</body>
+
+</html>

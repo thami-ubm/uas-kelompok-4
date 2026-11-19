@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBM Student Portal</title>
+    <link rel="stylesheet" href="stylejustin.css">
+    <link rel="icon" type="image/png" href="img/ubm.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="img/menu-button.svg" class="menu-toggle-icon" onclick="toggleSidebar()" alt="Menu">
+            
+            <div class="logo-container">
+                <picture>
+                    <source srcset="img/ubm.avif" type="image/avif">
+                    <source srcset="img/ubm.webp" type="image/webp">
+                    <img src="img/ubm.png" alt="UBM Logo" class="logo-img">
+                </picture>
+                <span class="logo-text">S1 Student Portal</span>
+            </div>
+        </div>
+        
+        <div class="user-profile">
+            <div class="user-info">
+                <span class="user-name">Stefanus Wicaksono</span>
+                <span class="user-id">37230069</span>
+            </div>
+            
+            <picture class="avatar-picture">
+                <source srcset="img/epan.avif" type="image/avif">
+                <source srcset="img/epan.webp" type="image/webp">
+                <img src="img/epan.jpg" alt="Profile" class="avatar-img">
+            </picture>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <aside class="sidebar" id="sidebar">
+            
+            <div class="points-wrapper">
+                <div class="points-box">
+                    <picture>
+                        <source srcset="img/medali.avif" type="image/avif">
+                        <source srcset="img/medali.png" type="image/png">
+                        <img src="img/medali.jpg" alt="Medal Icon" class="medal-icon">
+                    </picture>
+                    <div class="points-text">Poin : 21</div>
+                </div>
+            </div>
+
+            <ul class="menu-list">
+                <li>
+                    <a href="index.html" class="menu-link">
+                        <img src="img/house.svg" class="icon-svg" alt="Home"> 
+                        Home
+                    </a>
+                </li>
+                
+                <li class="has-submenu">
+                    <a href="timetable.html" class="menu-link active" onclick="toggleSubmenu(event)">
+                        <span style="display:flex; align-items:center; gap:10px;">
+                            <img src="img/calendar-dots.svg" class="icon-svg" alt="Timetable">
+                            Timetable
+                        </span>
+                        <img src="img/caret-up.svg" class="arrow-icon" alt="Arrow">
+                    </a>
+                    <ul class="submenu" id="timetableSubmenu">
+                        <li><a href="timetable.html" class="sub-link">Course</a></li>
+                        <li><a href="exam.html" class="sub-link">Exam</a></li>
+                        <li><a href="activity.html" class="sub-link active-sub">Seminar</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="abram_score.html" class="menu-link">
+                        <img src="img/exam.svg" class="icon-svg" alt="Score">
+                        Score
+                    </a>
+                </li>
+                <li>
+                    <a href="registration.html" class="menu-link">
+                        <img src="img/note-pencil.svg" class="icon-svg" alt="Reg">
+                        Registration
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="content">
+            <div class="page-title">
+                <h1>Seminar & Workshop</h1>
+                <p>Upcoming Events & Skill Development - Semester Ganjil 2024/2025</p>
+            </div>
+
+            <div class="seminar-container">
+                
+                <div class="seminar-card">
+                    <div class="date-badge">
+                        <span class="date-num">20</span>
+                        <span class="date-month">DEC</span>
+                    </div>
+                    
+                    <div class="seminar-info">
+                        <div class="seminar-header">
+                            <span class="tag workshop">Workshop</span>
+                            <span class="time-text">09:00 - 12:00 WIB</span>
+                        </div>
+                        <h3 class="event-title">UI/UX Design: Figma Mastery</h3>
+                        <p class="event-speaker">Speaker: Sarah Croft (Senior UX Designer)</p>
+                        <div class="event-location">
+                            <img src="img/house.svg" class="icon-svg-small" alt="Loc">
+                            <span>Lab Olympia</span>
+                        </div>
+                    </div>
+
+                    <div class="seminar-action">
+                        <button class="btn-registered">
+                            Registered
+                        </button>
+                    </div>
+                </div>
+
+                <div class="seminar-card">
+                    <div class="date-badge blue-badge">
+                        <span class="date-num">22</span>
+                        <span class="date-month">DEC</span>
+                    </div>
+                    
+                    <div class="seminar-info">
+                        <div class="seminar-header">
+                            <span class="tag seminar">Seminar</span>
+                            <span class="time-text">13:30 - 15:30 WIB</span>
+                        </div>
+                        <h3 class="event-title">The Art of Influence: Menguasai Komunikasi Persuasif di Dunia Kerja</h3>
+                        <p class="event-speaker">Speaker: Surianto, S.I.Kom., M.I.Kom</p>
+                        <div class="event-location">
+                            <img src="img/house.svg" class="icon-svg-small" alt="Loc">
+                            <span>The UBM Grand Hall (Lt. 8)</span>
+                        </div>
+                    </div>
+
+                    <div class="seminar-action">
+                        <button class="btn-register">
+                            <img src="img/note-pencil.svg" class="btn-icon" alt="Reg">
+                            Register
+                        </button>
+                    </div>
+                </div>
+
+                <div class="seminar-card full-event">
+                    <div class="date-badge gray-badge">
+                        <span class="date-num">05</span>
+                        <span class="date-month">JAN</span>
+                    </div>
+                    
+                    <div class="seminar-info">
+                        <div class="seminar-header">
+                            <span class="tag workshop">Workshop</span>
+                            <span class="time-text">10:00 - 14:00 WIB</span>
+                        </div>
+                        <h3 class="event-title">Basic 3D Modelling with Blender</h3>
+                        <p class="event-speaker">Speaker: M. Garry Saputra, S.Ds.</p>
+                        <div class="event-location">
+                            <img src="img/house.svg" class="icon-svg-small" alt="Loc">
+                            <span>Lab Athena</span>
+                        </div>
+                    </div>
+
+                    <div class="seminar-action">
+                        <button class="btn-register disabled" disabled>
+                            Full
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Universitas Bunda Mulia. Bridging Education to the Real World</p>
+    </footer>
+
+    <script>
+        function toggleSubmenu(event) {
+            event.preventDefault();
+            const submenu = document.getElementById('timetableSubmenu');
+            const arrow = event.currentTarget.querySelector('.arrow-icon');
+            
+            if (submenu.style.display === 'block') {
+                submenu.style.display = 'none';
+                arrow.style.transform = 'rotate(180deg)';
+            } else {
+                submenu.style.display = 'block';
+                arrow.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active-mobile');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/ubm.png">
+  <title>UBM Student Portal</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <img src="img/menu-button.svg" class="menu-btn" style="width: 30px;">
+    <h1>S1 Student Portal</h1>
+  </nav>
+
+  <div class="content">
+    <div class="sidebar">
+      <div></div>
+      <img src="img/medali.png">
+      <p style="color: rgb(255, 255, 255); align-self: center; margin: 0; font-weight: 500; font-size: 1.5rem;">Poin :
+        42</p>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="abram_score.html">Score</a>
+        <a style="background-color: rgb(144, 177, 211) ; border-radius: 10px 0 0 0;"
+          href="registration.html">Registration</a>
+        <div class="dropdown">
+          <a href="registration.html">Activity</a>
+          <a href="regist_tuition.html">Tuition</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding-left: 70px" class="maintoro">
+      <div class="activity_title">
+        <h1>Activity</h1>
+        <a href="profile.html"><img style="height: 60px" src="img/Fall-Guys-1.png" /></a>
+      </div>
+
+      <div class="scroll-container">
+        <div class="cardtoro4">
+          <img style="height: 600px;" src="img/poster.png">
+          <div style="padding-left: 15px;">
+            <p style="font-size: 1.5rem; margin: 0px;"><b>IMPACT 2026</b></p>
+            <p>This is where you put the description about the event in question.</p>
+            <div style="height: 160px;"></div>
+            <p style="font-size: 0.9rem; background-color: rgb(130, 127, 142); text-align: center; padding: 10px; width: 185px;"><b>Registration</b></p>
+            <img style="height: 205px; width: 205px; transform:translate(0.1%, 3%);" src="img/qr.png">
+            <p style="font-size: 1.5rem; background-color: rgb(130, 127, 142); text-align: center; padding: 10px; ">Entry Fee = Rp 200.000,00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const sidebar = document.querySelector('.sidebar');
+
+    menuBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('sidebar-open');
+    });
+  </script>
+
+</body>
+
+</html>

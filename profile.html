@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/ubm.png">
+  <title>UBM Student Portal</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <img src="img/menu-button.svg" class="menu-btn" style="width: 30px;">
+    <h1>S1 Student Portal</h1>
+  </nav>
+
+  <div class="content">
+    <div class="sidebar">
+      <div></div>
+      <img
+        style="width: 150px; border-radius: 20px; background-color: rgb(144, 177, 211); padding: 20px; border: 2px solid rgba(94, 94, 94, 0.151); align-self: center;"
+        src="img/medali.png">
+      <p style="color: rgb(255, 255, 255); align-self: center; margin: 0; font-weight: 500; font-size: 1.5rem;">Poin :
+        42</p>
+      <a style="background-color: rgb(144, 177, 211)" href="index.html">Home</a>
+      <a href="timetable.html">Timetable</a>
+      <a href="abram_score.html">Score</a>
+      <a href="registration.html">Registration</a>
+    </div>
+
+    <div class="main">
+      <div class="profile-title">
+        <h1>Profile</h1>
+        <a href="profile.html"><img style="height: 60px" src="img/Fall-Guys-1.png" /></a>
+      </div>
+
+      <div class="scroll-container">
+        <div class="profile-card">
+          <img class="profile-img" src="img/Fall-Guys-1.png" />
+
+          <div class="identity">
+            <div class="info-wrapper">
+              <div class="info-column">
+                <h2>Student Profile</h2>
+                <div class="info-row"><span class="label">Name</span><span class="value">Deren Tadeus</span></div>
+                <div class="info-row"><span class="label">Student ID</span><span class="value">37230012</span></div>
+                <div class="info-row"><span class="label">Major</span><span class="value">Interactive Design</span>
+                </div>
+                <div class="info-row"><span class="label">Home Campus</span><span class="value">UBM Ancol</span></div>
+                <div class="info-row"><span class="label">Class</span><span class="value">5PDI1</span></div>
+                <div class="info-row"><span class="label">Semester</span><span class="value">5th Semester</span></div>
+                <div class="info-row"><span class="label">Email</span><span class="value">37230012@student.ubm.ac.id</span></div>
+              </div>
+              <div class="info-column">
+                <h2>Personal Information</h2>
+                <div class="info-row"><span class="label">Birth Date</span><span class="value">16 July 2006</span></div>
+                <div class="info-row"><span class="label">Phone</span><span class="value">0812-3456-7890</span></div>
+                <div class="info-row"><span class="label">City</span><span class="value">Jakarta, Indonesia</span></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const sidebar = document.querySelector('.sidebar');
+
+    menuBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('sidebar-open');
+    });
+  </script>
+
+</body>
+
+</html>

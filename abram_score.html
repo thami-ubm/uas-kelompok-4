@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBM Student Portal</title>
+    <link rel="stylesheet" href="abram_Current%20Score%20Report.css">
+    <link rel="icon" type="image/png" href="img/ubm.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="img/menu-button.svg" class="menu-toggle-icon" onclick="toggleSidebar()" alt="Menu">
+            
+            <div class="logo-container">
+                <picture>
+                    <source srcset="img/ubm.avif" type="image/avif">
+                    <source srcset="img/ubm.webp" type="image/webp">
+                    <img src="img/ubm.png" alt="UBM Logo" class="logo-img">
+                </picture>
+                <span class="logo-text">S1 Student Portal</span>
+            </div>
+        </div>
+        
+        <div class="user-profile">
+            <div class="user-info">
+                <span class="user-name">Stefanus Wicaksono</span>
+                <span class="user-id">37230069</span>
+            </div>
+            
+            <picture class="avatar-picture">
+                <source srcset="img/epan.avif" type="image/avif">
+                <source srcset="img/epan.webp" type="image/webp">
+                <img src="img/epan.jpg" alt="Profile" class="avatar-img">
+            </picture>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <aside class="sidebar" id="sidebar">
+            
+            <div class="points-wrapper">
+                <div class="points-box">
+                    <picture>
+                        <source srcset="img/medali.avif" type="image/avif">
+                        <source srcset="img/medali.png" type="image/png">
+                        <img src="img/medali.jpg" alt="Medal Icon" class="medal-icon">
+                    </picture>
+                    <div class="points-text">Poin : 21</div>
+                </div>
+            </div>
+
+            <ul class="menu-list">
+                <li>
+                    <a href="index.html" class="menu-link">
+                        <img src="img/house.svg" class="icon-svg" alt="Home"> 
+                        Home
+                    </a>
+                </li>
+                
+                <li class="has-submenu">
+                    <a href="timetable.html" class="menu-link">
+                        <span style="display:flex; align-items:center; gap:10px;">
+                            <img src="img/calendar-dots.svg" class="icon-svg" alt="Timetable">
+                            Timetable
+                        
+
+                <li>
+                    <a href="exam.html" class="menu-link active" onclick="toggleSubmenu(event)">
+                         <span style="display:flex; align-items:center; gap:10px;">
+                             <img src="img/exam.svg" class="icon-svg" alt="Score">
+                              
+                              Score
+                            </span>
+                        <img src="img/caret-up.svg" class="arrow-icon" alt="Arrow">
+                    </a>
+                    <ul class="submenu" id="timetableSubmenu">
+                        <li><a href="abram_score.html" class="sub-link active-sub">Current Score Report</a></li>
+                        <li><a href="abram_transcript.html" class="sub-link">Transcript</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="registration.html" class="menu-link">
+                        <img src="img/note-pencil.svg" class="icon-svg" alt="Reg">
+                        Registration
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="content">
+            <div class="page-title">
+                <h1>Current Score Report</h1>
+                <p>Your current score for this semester</p>
+            </div>
+
+            <div class="seminar-container">
+                
+                <div class="seminar-card">
+                    <div class="date-badge">
+                        <span class="date-num">B+</span>
+                        <span class="date-month">3.50</span>
+                    </div>
+                    
+                    <div class="seminar-info">
+                        <div class="seminar-header">
+                        </div>
+                        <h3 class="event-title">Digital Painting</h3>
+                        <p class="event-speaker">DKG11 | 4 SKS</p>
+                        <div class="event-location">
+                        </div>
+                        <div class="score-card">
+                        <div class="score-item">
+                            <span class="label">Quiz<p></p></span>
+                            <span class="value">80</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="label">Assignment<p></p></span>
+                            <span class="value">77</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="label">Midterm<p></p></span>
+                            <span class="value">82</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="label">Final<p></p></span>
+                            <span class="value">75</span>
+                        </div>
+                    </div>  </div>
+
+                    <div class="seminar-action">
+                        <button class="btn-registered">
+                            Registered
+                        </button>
+                    </div>
+                </div>
+
+                <div class="seminar-card">
+                    <div class="decent-score">
+                        <span class="date-num">B</span>
+                        <span class="date-month">3.00</span>
+                    </div>
+                    
+                    <div class="seminar-info">
+                        <div class="seminar-header">
+                        </div>
+                        <h3 class="event-title">Design Thinking & Research</h3>
+                        <p class="event-speaker">DKB14 | 4 SKS</p>
+                        <div class="event-location">
+                        </div>
+                        <div class="score-card">
+                        <div class="score-item">
+                            <span class="label">Quiz<p></p></span>
+                            <span class="value">70</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="label">Assignment<p></p></span>
+                            <span class="value">62</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="label">Midterm<p></p></span>
+                            <span class="value">62</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="label">Final<p></p></span>
+                            <span class="value">71</span>
+                        </div>
+                    </div>  </div>
+
+                    <div class="seminar-action">
+                        <button class="btn-registered">
+                            Registered
+                        </button>
+                    </div>
+                </div>
+
+                 <div class="seminar-card">
+                    <div class="bad-score">
+                        <span class="date-num">D</span>
+                        <span class="date-month">1.00</span>
+                    </div>
+                    
+                    <div class="seminar-info">
+                        <div class="seminar-header">
+                        </div>
+                        <h3 class="event-title">Modelling and Rendering</h3>
+                        <p class="event-speaker">DID01 | 4 SKS</p>
+                        <div class="event-location">
+                        </div>
+                        <div class="score-card">
+                        <div class="score-item">
+                            <span class="label">Quiz<p></p></span>
+                            <span class="value">41</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="label">Assignment<p></p></span>
+                            <span class="value">75</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="label">Midterm<p></p></span>
+                            <span class="value">45</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="label">Final<p></p></span>
+                            <span class="value">53</span>
+                        </div>
+                    </div>  </div>
+
+                    <div class="seminar-action">
+                        <button class="btn-registered">
+                            Registered
+                        </button>
+                    </div>
+                </div>
+
+                <div class="seminar-card">
+                    <div class="great-score">
+                        <span class="date-num">A</span>
+                        <span class="date-month">4.00</span>
+                    </div>
+                    
+                    <div class="seminar-info">
+                        <div class="seminar-header">
+                        </div>
+                        <h3 class="event-title">Web Design & Development</h3>
+                        <p class="event-speaker">DIB06 | 4 SKS</p>
+                        <div class="event-location">
+                        </div>
+                        <div class="score-card">
+                        <div class="score-item">
+                            <span class="label">Quiz<p></p></span>
+                            <span class="value">97</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="label">Asssignment<p></p></span>
+                            <span class="value">83</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="label">Midterm<p></p></span>
+                            <span class="value">87</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="label">Final<p></p></span>
+                            <span class="value">92</span>
+                        </div>
+                    </div>  </div>
+
+                    <div class="seminar-action">
+                        <button class="btn-registered">
+                            Registered
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Universitas Bunda Mulia. Bridging Education to the Real World</p>
+    </footer>
+
+    <script>
+        function toggleSubmenu(event) {
+            event.preventDefault();
+            const submenu = document.getElementById('timetableSubmenu');
+            const arrow = event.currentTarget.querySelector('.arrow-icon');
+            
+            if (submenu.style.display === 'block') {
+                submenu.style.display = 'none';
+                arrow.style.transform = 'rotate(180deg)';
+            } else {
+                submenu.style.display = 'block';
+                arrow.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active-mobile');
+        }
+    </script>
+</body>
+</html>

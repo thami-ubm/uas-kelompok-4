@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/ubm.png">
+  <title>UBM Student Portal</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <img src="img/menu-button.svg" class="menu-btn" style="width: 30px;">
+    <h1>S1 Student Portal</h1>
+  </nav>
+
+    <div class="content">
+      <div class="sidebar">
+        <div></div>
+        <img src="img/medali.png">
+        <p style="color: rgb(255, 255, 255); align-self: center; margin: 0; font-weight: 500; font-size: 1.5rem;">Poin : 42</p>
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="timetable.html">Timetable</a>
+          <a href="abram_score.html">Score</a>
+          <a style="background-color: rgb(144, 177, 211) ; border-radius: 10px 0 0 0;" href="registration.html">Registration</a>
+            <div class="dropdown">
+                <a href="registration.html">Activity</a>
+                <a href="regist_tuition.html">Tuition</a>
+        </div>
+        </div>
+      </div>
+
+      <div style="padding-left: 65px;" class="main">
+        <div class="tuition_title">
+          <h1>Tuition</h1>
+          <a href="profile.html"><img style="height: 60px" src="img/Fall-Guys-1.png" /></a>
+        </div>
+
+        <div class="scroll-container">
+          <div class="cardtoro">
+                <p style="transform:translate(5%,5%); font-size: 1.5rem;"><b>PILIH PERIODE | V</b></p>
+            </div>
+
+            <div class="cardtoro3">
+                <p style="transform:translate(5%,100%); font-size: 1.5rem;"><b>Jumlah Tagihan yang Belum dibayar : Rp. 0</b></p><br>
+                <p style="transform:translate(5%,80%); font-size: 1rem;">keterangan =</p>
+                <p style="transform:translate(5%,80%); font-size: 1rem;">> Data di-update 2-3 hari kerja setelah pembayaran</p>
+                <p style="transform:translate(5%,80%); font-size: 1rem;">> Periode pembayaran akan muncul setelah anda sudan mengisi KRS</p>
+                <p style="transform:translate(5%,80%); font-size: 1rem;">> Jika IPS Anda pada Periode 2025/2026 - Ganjil tidak memenuhi standar beasiswa maka akan ada penyesuaian tagihan pada Periode 2025/2026 - Genap.</p>
+                <p style="transform:translate(5%,80%); font-size: 1rem;">> Apabila ada ketidaksesuaian hubungi <b>Layanan Mahasiswa</b></p>
+                <p style="transform:translate(5%,80%); font-size: 1rem;">> Jika pembayaran melewati dari tanggal yang telah ditentukan, maka akan dikenakan denda sesuai dengan ketentuan yang berlaku</p>
+            </div>
+
+            <div class="cardtoro2">
+                <p style="transform:translate(5%,10%); font-size: 1.5rem;"><b>2025 - GENAP, 18 November - 24 November 2025</b></p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const sidebar = document.querySelector('.sidebar');
+
+      menuBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('sidebar-open');
+      });
+    </script>
+
+  </body>
+</html>

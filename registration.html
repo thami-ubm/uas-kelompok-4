@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/ubm.png">
+  <title>UBM Student Portal</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <img src="img/menu-button.svg" class="menu-btn" style="width: 30px;">
+    <h1>S1 Student Portal</h1>
+  </nav>
+
+    <div class="content">
+      <div class="sidebar">
+        <div></div>
+        <img src="img/medali.png">
+        <p style="color: rgb(255, 255, 255); align-self: center; margin: 0; font-weight: 500; font-size: 1.5rem;">Poin : 42</p>
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="timetable.html">Timetable</a>
+          <a href="abram_score.html">Score</a>
+          <a style="background-color: rgb(144, 177, 211) ; border-radius: 10px 0 0 0;" href="registration.html">Registration</a>
+            <div class="dropdown">
+                <a href="registration.html">Activity</a>
+                <a href="regist_tuition.html">Tuition</a>
+        </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div style="gap: 59vw;" class="title">
+          <h1>Registration</h1>
+          <a href="profile.html"><img style="height: 60px" src="img/Fall-Guys-1.png" /></a>
+        </div>
+
+        <div class="scroll-container">
+           <p><i>To participate in an activity, go to Registration > Activity</i></p>
+            <table class="timetable">
+              <thead>
+                <tr>
+                  <th>Activity Name</th>
+                  <th>Date & Time</th>
+                  <th>Room Type & Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mitta Day 2025 "Together as One, Together We Shine" - Peserta</td>
+                  <td>22 Dec (06:00) - <p></p>23 Dec (17:30)</td>
+                  <td>Religious <p></p>(Non Academical)</td>
+                </tr>
+                <tr>
+                    <td><a style="text-decoration: none;" href="regist_activity.html">International Competition Retail Business Case Analysis IMPACT 2026</a></td>
+                    <td>28 Apr 2025 <P></P>(08:00 - 12:00)</td>
+                    <td>(Academical)</td>
+                </tr>
+                <tr>
+                  <td>Business Plan "Create Your Own Business":"Innovative Retail Startups for Gen Z & Alpha: Designing Future-Ready Business Models"</td>
+                  <td>29 Apr 2025 <P></P>(08:00 - 12:00)</td>
+                  <td>Business Plan <p> (Academical)</p></td>
+                </tr>
+              </tbody>
+            </table>
+           <p><i>Activity History</i></p>
+            <table class="timetable">
+              <thead>
+                <tr>
+                  <th>Activity Name</th>
+                  <th>Date & Time</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Kunjungan Industri From Story to Screen: Creative World of Visinema 20 Mei 2025</td>
+                  <td>20 Mei 2025 (11:00) - <p></p>20 Mei 2025 (17:30)</td>
+                  <td>Finished</td>
+                </tr>
+                <tr>
+                  <td>PKMM SEMA FTD XVI Young Leaders Big Impact</td>
+                  <td>10 Januari 2025 - <p></p>11 Januari 2025</td>
+                  <td>Finished</td>
+                </tr>
+                <tr>
+                  <td>Pelatihan Kepemimpinan dan Manajemen Mahasiswa (PKMM) XV</td>
+                  <td>12 Febuari 2025 - <p></p>14 Febuari 2025</td>
+                  <td>Finished</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const sidebar = document.querySelector('.sidebar');
+
+      menuBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('sidebar-open');
+      });
+    </script>
+
+  </body>
+</html>
